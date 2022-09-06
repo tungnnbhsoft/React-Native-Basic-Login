@@ -19,15 +19,24 @@ export default Home = () => {
                 <Text>Welcome, {user.email}</Text>
             )}
             <TouchableOpacity
-                        style={styles.button}
-                        onPress={() => {dispatch(logoutUser());navigation.navigate("Login")}}>
-                            <FontAwesomeIcon
-                            icon="fa-solid fa-arrow-right-from-bracket"
-                            size={25}
-                            style={styles.formLine}
-                            color="white"/>
-                            <Text style={[styles.formLine, styles.buttonText]}>Log out</Text>
-                        </TouchableOpacity>
+                style={styles.button}
+                onPress={() => navigation.navigate("Todo App")}>
+                <FontAwesomeIcon icon="fa-solid fa-clipboard"
+                size={25}
+                style={styles.formLine}
+                color="white"/>
+                <Text style={[styles.formLine, styles.buttonText]}>Todo App</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                style={styles.button}
+                onPress={() => {dispatch(logoutUser());navigation.navigate("Login")}}>
+                <FontAwesomeIcon
+                icon="fa-solid fa-arrow-right-from-bracket"
+                size={25}
+                style={styles.formLine}
+                color="white"/>
+                <Text style={[styles.formLine, styles.buttonText]}>Log out</Text>
+            </TouchableOpacity>
         </View>
     )
 }
