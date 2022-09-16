@@ -26,7 +26,6 @@ export default Login = () => {
         }
       });
     const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/
-    
     // Without react-hook-form
     // const login = () => {
     //     setEmailError("")
