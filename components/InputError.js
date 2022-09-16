@@ -1,12 +1,13 @@
 import React from "react"
 import { Text, View } from "react-native"
-// export default InputError = ({error, showError}) => {
-//     if(showError&&error!=="") {
-    export default InputError = ({error}) => {
-        if(error!=="") {
+import { styles } from "../Style";
+export default InputError = ({error, showError}) => {
+    if(showError&&error!=="") {
+    // export default InputError = ({error}) => {
+    //     if(error!=="") {
         return (
             <View>
-                <Text>{error}</Text>
+                <Text style={styles.errorColor}>{error}</Text>
             </View>
         )
     }
